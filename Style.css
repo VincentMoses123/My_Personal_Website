@@ -62,7 +62,7 @@ p {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 400px;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
