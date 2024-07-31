@@ -17,12 +17,30 @@
         header {
             background: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
+        }
+
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         .container {
@@ -52,8 +70,9 @@
             max-width: 100%;
             height: auto;
             display: block;
-            margin: auto;
+            margin: 20px auto;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h3 {
@@ -61,31 +80,56 @@
             color: #888;
             margin-top: 10px;
         }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>My Portfolio</h1>
+    <h1>Vincent Moses - Portfolio</h1>
 </header>
 
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#journey">My Journey</a>
+    <a href="#photo">Photo</a>
+</nav>
+
 <div class="container">
-    <div class="content">
+    <div id="about" class="content">
         <h2>About Me</h2>
         <p>My name is Vincent Moses, and I am a current student at the University of Cincinnati. I am currently looking for a co-op!</p>
     </div>
 
-    <div class="content">
+    <div id="journey" class="content">
         <h2>My Journey</h2>
-        <h1>Well, this was going to be a website to help me get a job, but I got one already, lucky me!</h1>
+        <p>Well, this was going to be a website to help me get a job, but I got one already, lucky me!</p>
     </div>
 
-    <div class="content">
+    <div id="photo" class="content">
         <h2>This is my girl!</h2>
         <img src="rah.jpg" alt="Photo of Vincent's girl">
         <h3>She is perfect!!</h3>
     </div>
 </div>
+
+<footer>
+    <p>&copy; 2024 Vincent Moses. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
