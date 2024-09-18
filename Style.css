@@ -52,7 +52,19 @@ nav a:hover {
     margin: 20px 0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .content img {
+    transition: transform 0.5s ease;
+  }
+  
+  .content:hover img {
+    transform: scale(1.2);
+  }
+  
+
 
 h2 {
     color: #444;
