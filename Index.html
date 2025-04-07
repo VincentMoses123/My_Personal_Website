@@ -1,66 +1,137 @@
 <!DOCTYPE html>
-
+<html lang="en"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincent Moses - Portfolio</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="Website.js"></script>
 </head>
 <body>
 
 <header>
     <h1>Vincent Moses - Portfolio</h1>
+    <p class="subtitle">Software Developer | Co-op Student at Modern Ice</p>
 </header>
 
 <nav>
     <a href="#about">About Me</a>
     <a href="#journey">My Journey</a>
-    <a href="#Table">What I Bring</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
     <a href="#photos">Photos</a>
-    <a href="#btn">Contact</a>
+    <a href="#contact">Contact</a>
 </nav>
-
 
 <div class="container">
     <div id="about" class="content">
         <h2>About Me</h2>
-        <p>My name is Vincent Moses, and I am a current student at the University of Cincinnati! I am currently on a co-op rotation! I am learning so much it is crazy! I currently work at Modern Ice in Dent, Ohio. Its a cool place and I came in right when they started to transition systems so I learned a lot. Here is a link to the Modern Ice website! <a href="https://modernice.com">Go Here </a> </p>
+        <p>Hello! I'm Vincent Moses, a passionate software developer and current student at the University of Cincinnati. I'm currently on a co-op rotation at Modern Ice in Dent, Ohio, where I'm gaining valuable industry experience while contributing to their system transition projects.</p>
+        <p>I'm driven by continuous learning and growth, always seeking new challenges and opportunities to expand my technical expertise. My experience at Modern Ice has been particularly rewarding, as I've been able to witness and participate in their system modernization efforts firsthand.</p>
+        <p>Check out Modern Ice's website: <a href="https://modernice.com" class="external-link">Modern Ice</a></p>
     </div>
 
     <div id="journey" class="content">
         <h2>My Journey</h2>
-        <p>Well, this was going to be a website to help me get a job, but I got one already, lucky me!</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Current</h3>
+                <p>Co-op at Modern Ice - Contributing to system modernization and development</p>
+            </div>
+            <div class="timeline-item">
+                <h3>University of Cincinnati</h3>
+                <p>Pursuing my degree while gaining practical experience through co-op rotations</p>
+            </div>
+        </div>
     </div>
 
-    <div id="Table" class="content">
-        <h2>What I Bring</h2>
-        <p>I bring a fresh perspective to any team I work with. My best traits are me being a people person and me always trying my hardest to get better!
-            <li>Python<//li>
-            <li>CSS</li>
-            <li>Outlook</li>
-            <li>Git</li><br>
-           <b>I want to learn more and more and thats the best thing about me! </b>
-        </p>
+    <div id="skills" class="content">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-item">
+                    <span>HTML/CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <ul class="skill-list">
+                    <li>Git</li>
+                    <li>Microsoft Outlook</li>
+                    <li>Modern Development Tools</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="content">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>A responsive portfolio website showcasing my skills and experience</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <!-- Add more project cards as you complete more projects -->
+        </div>
     </div>
 
     <div id="photos" class="content">
-        <h2>This is my girl!</h2>
-        <img src="PICOFGIRL.jpg" alt="Picture of me and my girl">
-        <img src="rah.jpg" alt="rah">
-        <h3>She is perfect!!</h3>
+        <h2>Life Outside of Code</h2>
+        <div class="photo-gallery">
+            <div class="photo-item">
+                <img src="PICOFGIRL.jpg" alt="Picture of me and my girl">
+                <h3>My Girl</h3>
+            </div>
+            <div class="photo-item">
+                <img src="rah.jpg" alt="rah">
+                <h3>Special Moments</h3>
+            </div>
+        </div>
     </div>
 
-    <div id="btn" class="content">
-        <h2>Contact me and check out resume!</h2>
-        <button onclick="window.location.href='mailto:vincentmoses101@gmail.com';">Email Me</button>
-        <button onclick="window.location.href='My New Resume.pdf';">Download Resume</button>
-	      <button onclick="myFunction()">Click this button if you are Elisabeth Cranert!</button>
+    <div id="contact" class="content">
+        <h2>Let's Connect!</h2>
+        <div class="contact-container">
+            <div class="contact-buttons">
+                <button onclick="window.location.href='mailto:vincentmoses101@gmail.com';" class="contact-btn">
+                    <i class="fas fa-envelope"></i> Email Me
+                </button>
+                <button onclick="window.location.href='My New Resume.pdf';" class="contact-btn">
+                    <i class="fas fa-download"></i> Download Resume
+                </button>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <button onclick="myFunction()" class="special-btn">Special Message for Elisabeth Cranert</button>
+        </div>
     </div>
-    
 </div>
 
-<button id="scrollTopBtn" onclick="topFunction()">Top</button>
+<button id="scrollTopBtn" onclick="topFunction()">
+    <i class="fas fa-arrow-up"></i>
+</button>
 
 <footer>
     <p>&copy; 2024 Vincent Moses. All Rights Reserved | Passion Project</p>
